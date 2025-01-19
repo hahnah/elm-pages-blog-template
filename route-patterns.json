@@ -1,0 +1,1 @@
+[{"kind":"prerender","pathPattern":"/life-blog/:slug"},{"kind":"prerender","pathPattern":"/tags/:slug"},{"kind":"prerender","pathPattern":"/tech-blog/:slug"},{"kind":"static","pathPattern":"/about"},{"kind":"static","pathPattern":"/life-blog"},{"kind":"static","pathPattern":"/tags"},{"kind":"static","pathPattern":"/tech-blog"},{"kind":"static","pathPattern":"/"}]

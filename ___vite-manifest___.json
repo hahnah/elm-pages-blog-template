@@ -1,0 +1,11 @@
+{
+  "elm-stuff/elm-pages/index.html": {
+    "file": "assets/index-C9SU9G8M.js",
+    "name": "index",
+    "src": "elm-stuff/elm-pages/index.html",
+    "isEntry": true,
+    "css": [
+      "assets/index-CM8pqJ-r.css"
+    ]
+  }
+}
