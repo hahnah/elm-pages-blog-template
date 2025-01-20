@@ -1,4 +1,4 @@
-	ü•>
+	ü•2
 ## TL;DR
 
 Here's the algorithm for `pratt(precLimit)`:
@@ -54,7 +54,7 @@ Of course, as an academic paper it has a different target audience, so let's not
 
 And I suspect that's the reason people write summaries. You don't need the 1973 motivation, you just need to _solve the operator precedence problem!_
 
-The best summary and explanation of Pratt parsers I know of (at least for the audience of an amateur programming language designer in 2023) is written by [Bob Nystrom](https://twitter.com/munificentbob) in his blogpost [_"Pratt Parsers: Expression Parsing Made Easy"_](https://journal.stuffwithstuff.com/2011/03/19/pratt-parsers-expression-parsing-made-easy/). You should definitely read it! (Along with other Bob's writings, like [_Crafting Interpreters_](https://craftinginterpreters.com).)
+The best summary and explanation of Pratt parsers I know of (at least for the audience of an amateur programming language designer in 2023) is written by [Bob Nystrom](https://x.com/munificentbob) in his blogpost [_"Pratt Parsers: Expression Parsing Made Easy"_](https://journal.stuffwithstuff.com/2011/03/19/pratt-parsers-expression-parsing-made-easy/). You should definitely read it! (Along with other Bob's writings, like [_Crafting Interpreters_](https://craftinginterpreters.com).)
 
 The examples Bob gives are written in Java, and the [full example implementation](https://github.com/munificent/bantam) is split across multiple small classes.
 
@@ -512,43 +512,19 @@ Pratt parsers are nice in that they let you define a table of operators and thei
 Pratt parsers _can_ be shrouded in mystery (particularly if you encounter terms like `nud` and `led` while reading about them or using a library that didn't care to find better names).
 
 With that in mind I hope I have demystified this technique a little bit and made you consider using or writing one. Life's too short to deal with operator precedence in an ad-hoc way!
-4/images/authors/martin.jpg  Martin Janiczek martintwitter8https://twitter.com/Janiczek6/images/authors/default.pngÛ¢
+8/images/authors/birdman.webp  Birdman birdmanx*https://x.com/birdman8/images/authors/default.webpD
 # Hi there!
 
-## I'm Professor Franklin Frisby. 
-
-Pleased to make your acquaintance. We'll be spending some time together, as I'm supposed to teach you a bit about functional programming.
-
-I won't assume that you have any previous functional programming knowledge, because we both know what happens when you assume. 
-
-I will, however, expect you to have run into some of the _unfavorable situations_ that arise when working with **mutable state**, **unrestricted side effects**, and **unprincipled design**. 
-
-Now that we've been properly introduced, let's get on with it.
-&East Elm UniversityFranklin FrisbyFProfessor of Functional Programmingdefault
-email8professor.frisby@example.comtwitter6https://twitter.com/Twitterfacebook0https://www.facebook.comlinkedin0https://www.linkedin.comyoutube&https://youtube.comgithub$https://github.comšPratt parsers are a beautiful way of solving the operator precedence problem. &pratt-parsers ý‹  4Demystifying Pratt Parsers6/images/authors/default.pngÛ¢
+I'm Default Author.
+&East Elm UniversityDefault AuthorFProfessor of Functional Programmingdefault
+email4defaultauthor.@example.comxhttps://x.comfacebook0https://www.facebook.comlinkedin0https://www.linkedin.comyoutube&https://youtube.comgithub$https://github.comšPratt parsers are a beautiful way of solving the operator precedence problem. &pratt-parsers ý‹  4Demystifying Pratt Parsers8/images/authors/default.webpD
 # Hi there!
 
-## I'm Professor Franklin Frisby. 
-
-Pleased to make your acquaintance. We'll be spending some time together, as I'm supposed to teach you a bit about functional programming.
-
-I won't assume that you have any previous functional programming knowledge, because we both know what happens when you assume. 
-
-I will, however, expect you to have run into some of the _unfavorable situations_ that arise when working with **mutable state**, **unrestricted side effects**, and **unprincipled design**. 
-
-Now that we've been properly introduced, let's get on with it.
-&East Elm UniversityFranklin FrisbyFProfessor of Functional Programmingdefault
-email8professor.frisby@example.comtwitter6https://twitter.com/Twitterfacebook0https://www.facebook.comlinkedin0https://www.linkedin.comyoutube&https://youtube.comgithub$https://github.com‚Lets try to build some nice small template for elm-pages blogging R2023-09-06-simple-and-nice-elm-pages-blog ý‹¢elmelm-pagesblogbSimple and nice blogging template for elmâ€‘pages6/images/authors/default.pngÛ¢
+I'm Default Author.
+&East Elm UniversityDefault AuthorFProfessor of Functional Programmingdefault
+email4defaultauthor.@example.comxhttps://x.comfacebook0https://www.facebook.comlinkedin0https://www.linkedin.comyoutube&https://youtube.comgithub$https://github.com‚Lets try to build some nice small template for elm-pages blogging R2023-09-06-simple-and-nice-elm-pages-blog ý‹¢elmelm-pagesblogbSimple and nice blogging template for elmâ€‘pages8/images/authors/default.webpD
 # Hi there!
 
-## I'm Professor Franklin Frisby. 
-
-Pleased to make your acquaintance. We'll be spending some time together, as I'm supposed to teach you a bit about functional programming.
-
-I won't assume that you have any previous functional programming knowledge, because we both know what happens when you assume. 
-
-I will, however, expect you to have run into some of the _unfavorable situations_ that arise when working with **mutable state**, **unrestricted side effects**, and **unprincipled design**. 
-
-Now that we've been properly introduced, let's get on with it.
-&East Elm UniversityFranklin FrisbyFProfessor of Functional Programmingdefault
-email8professor.frisby@example.comtwitter6https://twitter.com/Twitterfacebook0https://www.facebook.comlinkedin0https://www.linkedin.comyoutube&https://youtube.comgithub$https://github.comØdElm is a functional language that compiles to JavaScript. It helps you make websites and web apps. It has a strong emphasis on simplicity and quality tooling. B2019-10-01-an-introduction-to-elm ý€jelm,An Introduction to Elm 
+I'm Default Author.
+&East Elm UniversityDefault AuthorFProfessor of Functional Programmingdefault
+email4defaultauthor.@example.comxhttps://x.comfacebook0https://www.facebook.comlinkedin0https://www.linkedin.comyoutube&https://youtube.comgithub$https://github.comØdElm is a functional language that compiles to JavaScript. It helps you make websites and web apps. It has a strong emphasis on simplicity and quality tooling. B2019-10-01-an-introduction-to-elm ý€jelm,An Introduction to Elm 

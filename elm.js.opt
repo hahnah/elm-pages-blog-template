@@ -5749,6 +5749,53 @@
     var $elm$html$Html$Attributes$href = function (url) {
         return $elm$html$Html$Attributes$stringProperty_fn("href", _VirtualDom_noJavaScriptUri(url));
     };
+    var $phosphor_icons$phosphor_elm$Phosphor$instagramLogo = function (weight) {
+        var elements = function () {
+            switch (weight) {
+                case 3:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,72a24,24,0,1,1,24-24A24,24,0,0,1,128,152ZM176,20H80A60.07,60.07,0,0,0,20,80v96a60.07,60.07,0,0,0,60,60h96a60.07,60.07,0,0,0,60-60V80A60.07,60.07,0,0,0,176,20Zm36,156a36,36,0,0,1-36,36H80a36,36,0,0,1-36-36V80A36,36,0,0,1,80,44h96a36,36,0,0,1,36,36ZM196,76a16,16,0,1,1-16-16A16,16,0,0,1,196,76Z")
+                        ]), _List_Nil)
+                    ]);
+                case 5:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M176,32H80A48,48,0,0,0,32,80v96a48,48,0,0,0,48,48h96a48,48,0,0,0,48-48V80A48,48,0,0,0,176,32ZM128,168a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z"),
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$opacity_a0, "0.2")
+                        ]), _List_Nil),
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm64-84a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z")
+                        ]), _List_Nil)
+                    ]);
+                case 4:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24ZM128,176a48,48,0,1,1,48-48A48.05,48.05,0,0,1,128,176Zm60-96a12,12,0,1,1,12-12A12,12,0,0,1,188,80Zm-28,48a32,32,0,1,1-32-32A32,32,0,0,1,160,128Z")
+                        ]), _List_Nil)
+                    ]);
+                case 1:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M128,82a46,46,0,1,0,46,46A46.06,46.06,0,0,0,128,82Zm0,80a34,34,0,1,1,34-34A34,34,0,0,1,128,162ZM176,26H80A54.06,54.06,0,0,0,26,80v96a54.06,54.06,0,0,0,54,54h96a54.06,54.06,0,0,0,54-54V80A54.06,54.06,0,0,0,176,26Zm42,150a42,42,0,0,1-42,42H80a42,42,0,0,1-42-42V80A42,42,0,0,1,80,38h96a42,42,0,0,1,42,42ZM190,76a10,10,0,1,1-10-10A10,10,0,0,1,190,76Z")
+                        ]), _List_Nil)
+                    ]);
+                case 2:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z")
+                        ]), _List_Nil)
+                    ]);
+                default:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M128,84a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,84Zm0,80a36,36,0,1,1,36-36A36,36,0,0,1,128,164ZM176,28H80A52.06,52.06,0,0,0,28,80v96a52.06,52.06,0,0,0,52,52h96a52.06,52.06,0,0,0,52-52V80A52.06,52.06,0,0,0,176,28Zm44,148a44.05,44.05,0,0,1-44,44H80a44.05,44.05,0,0,1-44-44V80A44.05,44.05,0,0,1,80,36h96a44.05,44.05,0,0,1,44,44ZM188,76a8,8,0,1,1-8-8A8,8,0,0,1,188,76Z")
+                        ]), _List_Nil)
+                    ]);
+            }
+        }();
+        return $phosphor_icons$phosphor_elm$Phosphor$makeBuilder(elements);
+    };
     var $phosphor_icons$phosphor_elm$Phosphor$link = function (weight) {
         var elements = function () {
             switch (weight) {
@@ -5947,47 +5994,47 @@
         }(), attributes);
         return $elm$svg$Svg$svg_fn(combinedAttributes, $elm$core$List$map_fn($elm$svg$Svg$map($elm$core$Basics$never), src));
     }, $phosphor_icons$phosphor_elm$Phosphor$toHtml = F2($phosphor_icons$phosphor_elm$Phosphor$toHtml_fn);
-    var $phosphor_icons$phosphor_elm$Phosphor$twitterLogo = function (weight) {
+    var $phosphor_icons$phosphor_elm$Phosphor$twitchLogo = function (weight) {
         var elements = function () {
             switch (weight) {
                 case 3:
                     return _List_fromArray([
                         $elm$svg$Svg$path_fn(_List_fromArray([
-                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M251.09,67.41A12,12,0,0,0,240,60H211.82a52.73,52.73,0,0,0-43.67-24,50.85,50.85,0,0,0-36.6,14.85A51.87,51.87,0,0,0,116,88v.78c-36.83-11.57-66.38-40.9-66.7-41.23a12,12,0,0,0-20.47,7.38C22.52,125.1,53.48,162.72,70.89,178.05,56.4,192.83,36,200.68,35.8,200.76A12,12,0,0,0,30,218.66C32,221.55,43.44,236,80,236c72.25,0,132.7-55.26,139.6-126.63l28.88-28.88A12,12,0,0,0,251.09,67.41ZM199.52,95.52a11.93,11.93,0,0,0-3.49,7.72C192.14,164.23,141.18,212,80,212a90.78,90.78,0,0,1-12.49-.79C78,204.55,89.72,195.07,98,182.66a12,12,0,0,0-3.9-17c-.12-.07-12.33-7.49-23.43-24.42s-17.26-37-18.46-59.78C69.37,94.4,96,110.79,126,115.84A12,12,0,0,0,140,104V88a28,28,0,0,1,8.41-20.07A27.07,27.07,0,0,1,167.86,60a28.83,28.83,0,0,1,25.82,16.81,12,12,0,0,0,11,7.19H211Z")
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M208,28H48A20,20,0,0,0,28,48V192a20,20,0,0,0,20,20H60v28a12,12,0,0,0,19.68,9.22L124.34,212H165.1a20.06,20.06,0,0,0,12.81-4.64l42.89-35.74a19.93,19.93,0,0,0,7.2-15.37V48A20,20,0,0,0,208,28Zm-4,126.38L163.66,188H120a12,12,0,0,0-7.68,2.78L84,214.38V200a12,12,0,0,0-12-12H52V52H204ZM156,136V88a12,12,0,0,1,24,0v48a12,12,0,0,1-24,0Zm-48,0V88a12,12,0,0,1,24,0v48a12,12,0,0,1-24,0Z")
                         ]), _List_Nil)
                     ]);
                 case 5:
                     return _List_fromArray([
                         $elm$svg$Svg$path_fn(_List_fromArray([
-                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M240,72l-32,32c-4.26,66.84-60.08,120-128,120-32,0-40-12-40-12s32-12,48-36c0,0-55.15-32-47.22-120,0,0,39.66,40,87.22,48V88c0-22,18-40.27,40-40a40.74,40.74,0,0,1,36.67,24Z"),
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M216,48V156.25a8,8,0,0,1-2.88,6.15l-42.89,35.75A8.05,8.05,0,0,1,165.1,200H120L72,240V200H48a8,8,0,0,1-8-8V48a8,8,0,0,1,8-8H208A8,8,0,0,1,216,48Z"),
                             _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$opacity_a0, "0.2")
                         ]), _List_Nil),
                         $elm$svg$Svg$path_fn(_List_fromArray([
-                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M247.39,68.94A8,8,0,0,0,240,64H209.57A48.65,48.65,0,0,0,168.1,40a46.87,46.87,0,0,0-33.74,13.7A47.87,47.87,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.3,47.79,9.57,79.77,22,98.18a110.92,110.92,0,0,0,21.89,24.2C61.43,195.2,37.45,204.41,37.2,204.51a8,8,0,0,0-3.85,11.93c.74,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.68,0,129.72-54.42,135.76-124.44l29.9-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.52-6.25,27.56-17,37.88-32.48a8,8,0,0,0-2.61-11.34c-.13-.08-12.86-7.74-24.48-25.29C54.54,124.11,48,100.38,48,73.09c16,13,45.25,33.18,78.69,38.8A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.89,30.89,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z")
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M208,32H48A16,16,0,0,0,32,48V192a16,16,0,0,0,16,16H64v32a8,8,0,0,0,13.12,6.15L122.9,208h42.2a16,16,0,0,0,10.25-3.71l42.89-35.75A15.93,15.93,0,0,0,224,156.25V48A16,16,0,0,0,208,32Zm0,124.25L165.1,192H120a8,8,0,0,0-5.12,1.85L80,222.92V200a8,8,0,0,0-8-8H48V48H208ZM160,136V88a8,8,0,0,1,16,0v48a8,8,0,0,1-16,0Zm-48,0V88a8,8,0,0,1,16,0v48a8,8,0,0,1-16,0Z")
                         ]), _List_Nil)
                     ]);
                 case 4:
                     return _List_fromArray([
                         $elm$svg$Svg$path_fn(_List_fromArray([
-                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M245.66,77.66l-29.9,29.9C209.72,177.58,150.67,232,80,232c-14.52,0-26.49-2.3-35.58-6.84-7.33-3.67-10.33-7.6-11.08-8.72a8,8,0,0,1,3.85-11.93c.26-.1,24.24-9.31,39.47-26.84a110.93,110.93,0,0,1-21.88-24.2c-12.4-18.41-26.28-50.39-22-98.18a8,8,0,0,1,13.65-4.92c.35.35,33.28,33.1,73.54,43.72V88a47.87,47.87,0,0,1,14.36-34.3A46.87,46.87,0,0,1,168.1,40a48.66,48.66,0,0,1,41.47,24H240a8,8,0,0,1,5.66,13.66Z")
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M208,32H48A16,16,0,0,0,32,48V192a16,16,0,0,0,16,16H64v32a8,8,0,0,0,13.12,6.15L122.9,208h42.2a16,16,0,0,0,10.25-3.71l42.89-35.75A15.93,15.93,0,0,0,224,156.25V48A16,16,0,0,0,208,32ZM128,136a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Zm48,0a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Z")
                         ]), _List_Nil)
                     ]);
                 case 1:
                     return _List_fromArray([
                         $elm$svg$Svg$path_fn(_List_fromArray([
-                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M245.54,69.71A6,6,0,0,0,240,66H208.4a46.6,46.6,0,0,0-40.33-24,44.93,44.93,0,0,0-32.31,13.12A45.92,45.92,0,0,0,122,88v8.66c-42-10-76.6-44.52-77-44.88A6,6,0,0,0,34.8,55.46c-4.25,47.22,9.42,78.75,21.64,96.89a107.71,107.71,0,0,0,23.07,25c-15.49,19-41.34,28.89-41.62,29a6,6,0,0,0-2.88,9C36,216.83,45.78,230,80,230c69.88,0,128.23-54,133.82-123.34l30.42-30.41A6,6,0,0,0,245.54,69.71ZM203.76,99.76a6,6,0,0,0-1.75,3.86C197.93,167.76,144.33,218,80,218c-14,0-22.76-2.41-28.06-4.8,11.3-5.68,29.72-16.88,41.05-33.87a6,6,0,0,0,.85-4.67A6,6,0,0,0,91,170.82c-.13-.08-13.13-7.86-25-25.72C52,124,45.31,98.43,46,68.88c14.88,12.6,45.57,35.09,81,41a6,6,0,0,0,7-5.92V88a34,34,0,0,1,10.19-24.34A33.05,33.05,0,0,1,167.93,54c13.43.17,26,8.37,31.24,20.4a6,6,0,0,0,5.5,3.6h20.84Z")
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M208,34H48A14,14,0,0,0,34,48V192a14,14,0,0,0,14,14H66v34a6,6,0,0,0,9.84,4.61L122.17,206H165.1a14,14,0,0,0,9-3.25L217,167a14,14,0,0,0,5-10.76V48A14,14,0,0,0,208,34Zm2,122.25a2,2,0,0,1-.72,1.54l-42.9,35.75a2,2,0,0,1-1.28.46H120a6,6,0,0,0-3.84,1.39L78,227.19V200a6,6,0,0,0-6-6H48a2,2,0,0,1-2-2V48a2,2,0,0,1,2-2H208a2,2,0,0,1,2,2ZM174,88v48a6,6,0,0,1-12,0V88a6,6,0,0,1,12,0Zm-48,0v48a6,6,0,0,1-12,0V88a6,6,0,0,1,12,0Z")
                         ]), _List_Nil)
                     ]);
                 case 2:
                     return _List_fromArray([
                         $elm$svg$Svg$path_fn(_List_fromArray([
-                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z")
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M208,32H48A16,16,0,0,0,32,48V192a16,16,0,0,0,16,16H64v32a8,8,0,0,0,13.12,6.15L122.9,208h42.2a16,16,0,0,0,10.25-3.71l42.89-35.75A15.93,15.93,0,0,0,224,156.25V48A16,16,0,0,0,208,32Zm0,124.25L165.1,192H120a8,8,0,0,0-5.12,1.85L80,222.92V200a8,8,0,0,0-8-8H48V48H208ZM160,136V88a8,8,0,0,1,16,0v48a8,8,0,0,1-16,0Zm-48,0V88a8,8,0,0,1,16,0v48a8,8,0,0,1-16,0Z")
                         ]), _List_Nil)
                     ]);
                 default:
                     return _List_fromArray([
                         $elm$svg$Svg$path_fn(_List_fromArray([
-                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M243.7,70.47A4,4,0,0,0,240,68H207.2a44.57,44.57,0,0,0-39.15-24,42.76,42.76,0,0,0-30.88,12.55A43.85,43.85,0,0,0,124,88V99.16c-43.65-9.39-80-45.6-80.39-46a4,4,0,0,0-4.19-.95,4,4,0,0,0-2.63,3.41c-4.2,46.62,9.27,77.71,21.31,95.59A103.68,103.68,0,0,0,82.35,177c-15.68,20.49-43.46,31.13-43.75,31.24a4,4,0,0,0-1.93,6c.27.4,2.79,4,9.54,7.36C54.73,225.84,66.1,228,80,228c69.09,0,126.73-53.56,131.89-122.23l30.94-30.94A4,4,0,0,0,243.7,70.47Zm-38.53,30.7a4,4,0,0,0-1.16,2.58C199.85,168.94,145.38,220,80,220c-17.85,0-27.63-3.89-32.5-6.87,10.37-4.82,31.45-16.34,43.83-34.91a4,4,0,0,0,.56-3.12A3.93,3.93,0,0,0,90,172.55c-.13-.08-13.39-8-25.52-26.15C54,130.71,42.39,104.11,44.19,64.65c13.17,11.62,45.48,37,83.15,43.3a4,4,0,0,0,4.66-4V88a36,36,0,0,1,10.79-25.76A35,35,0,0,1,168,52c14.2.18,27.49,8.86,33.06,21.61A4,4,0,0,0,204.67,76h25.67Z")
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M208,36H48A12,12,0,0,0,36,48V192a12,12,0,0,0,12,12H68v36a4,4,0,0,0,2.3,3.62A3.9,3.9,0,0,0,72,244a4,4,0,0,0,2.56-.93L121.45,204H165.1a12.06,12.06,0,0,0,7.69-2.78l42.89-35.75a11.93,11.93,0,0,0,4.32-9.22V48A12,12,0,0,0,208,36Zm4,120.25a4,4,0,0,1-1.44,3.08l-42.9,35.74a4,4,0,0,1-2.56.93H120a4,4,0,0,0-2.56.93L76,231.46V200a4,4,0,0,0-4-4H48a4,4,0,0,1-4-4V48a4,4,0,0,1,4-4H208a4,4,0,0,1,4,4ZM172,88v48a4,4,0,0,1-8,0V88a4,4,0,0,1,8,0Zm-48,0v48a4,4,0,0,1-8,0V88a4,4,0,0,1,8,0Z")
                         ]), _List_Nil)
                     ]);
             }
@@ -6004,6 +6051,53 @@
             hj: src
         };
     }, $phosphor_icons$phosphor_elm$Phosphor$withClass = F2($phosphor_icons$phosphor_elm$Phosphor$withClass_fn);
+    var $phosphor_icons$phosphor_elm$Phosphor$xLogo = function (weight) {
+        var elements = function () {
+            switch (weight) {
+                case 3:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M218.12,209.56l-61-95.8,59.72-65.69a12,12,0,0,0-17.76-16.14L143.81,92.77,106.12,33.56A12,12,0,0,0,96,28H48A12,12,0,0,0,37.88,46.44l61,95.8L39.12,207.93a12,12,0,1,0,17.76,16.14l55.31-60.84,37.69,59.21A12,12,0,0,0,160,228h48a12,12,0,0,0,10.12-18.44ZM166.59,204,69.86,52H89.41l96.73,152Z")
+                        ]), _List_Nil)
+                    ]);
+                case 5:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M208,216H160L48,40H96Z"),
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$opacity_a0, "0.2")
+                        ]), _List_Nil),
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z")
+                        ]), _List_Nil)
+                    ]);
+                case 4:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M215,219.85a8,8,0,0,1-7,4.15H160a8,8,0,0,1-6.75-3.71l-40.49-63.63L53.92,221.38a8,8,0,0,1-11.84-10.76l61.77-68L41.25,44.3A8,8,0,0,1,48,32H96a8,8,0,0,1,6.75,3.71l40.49,63.63,58.84-64.72a8,8,0,0,1,11.84,10.76l-61.77,67.95,62.6,98.38A8,8,0,0,1,215,219.85Z")
+                        ]), _List_Nil)
+                    ]);
+                case 1:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M213.06,212.78l-63.42-99.66L212.44,44A6,6,0,1,0,203.56,36L143,102.62l-41.9-65.84A6,6,0,0,0,96,34H48a6,6,0,0,0-5.06,9.22l63.42,99.66L43.56,212A6,6,0,0,0,52.44,220L113,153.38l41.9,65.84A6,6,0,0,0,160,222h48a6,6,0,0,0,5.06-9.22ZM163.29,210,58.93,46H92.71L197.07,210Z")
+                        ]), _List_Nil)
+                    ]);
+                case 2:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M214.75,211.71l-62.6-98.38,61.77-67.95a8,8,0,0,0-11.84-10.76L143.24,99.34,102.75,35.71A8,8,0,0,0,96,32H48a8,8,0,0,0-6.75,12.3l62.6,98.37-61.77,68a8,8,0,1,0,11.84,10.76l58.84-64.72,40.49,63.63A8,8,0,0,0,160,224h48a8,8,0,0,0,6.75-12.29ZM164.39,208,62.57,48h29L193.43,208Z")
+                        ]), _List_Nil)
+                    ]);
+                default:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M211.37,213.85,147.13,112.9,211,42.69A4,4,0,0,0,205,37.31L142.68,105.9,99.38,37.85A4,4,0,0,0,96,36H48a4,4,0,0,0-3.37,6.15L108.87,143.1,45,213.31A4,4,0,1,0,51,218.69l62.36-68.59,43.3,68.05A4,4,0,0,0,160,220h48a4,4,0,0,0,3.37-6.15ZM162.2,212,55.29,44H93.8L200.71,212Z")
+                        ]), _List_Nil)
+                    ]);
+            }
+        }();
+        return $phosphor_icons$phosphor_elm$Phosphor$makeBuilder(elements);
+    };
     var $phosphor_icons$phosphor_elm$Phosphor$youtubeLogo = function (weight) {
         var elements = function () {
             switch (weight) {
@@ -6063,12 +6157,16 @@
                     return $phosphor_icons$phosphor_elm$Phosphor$facebookLogo;
                 case "github":
                     return $phosphor_icons$phosphor_elm$Phosphor$githubLogo;
-                case "twitter":
-                    return $phosphor_icons$phosphor_elm$Phosphor$twitterLogo;
+                case "x":
+                    return $phosphor_icons$phosphor_elm$Phosphor$xLogo;
+                case "instagram":
+                    return $phosphor_icons$phosphor_elm$Phosphor$instagramLogo;
                 case "linkedin":
                     return $phosphor_icons$phosphor_elm$Phosphor$linkedinLogo;
                 case "youtube":
                     return $phosphor_icons$phosphor_elm$Phosphor$youtubeLogo;
+                case "twitch":
+                    return $phosphor_icons$phosphor_elm$Phosphor$twitchLogo;
                 case "tiktok":
                     return $phosphor_icons$phosphor_elm$Phosphor$tiktokLogo;
                 default:
@@ -11968,7 +12066,7 @@
                         $elm$virtual_dom$VirtualDom$attribute_fn("decoding", "async"),
                         $elm$virtual_dom$VirtualDom$attribute_fn("data-nimg", "1"),
                         $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "h-48 w-48 rounded-full"),
-                        $elm$html$Html$Attributes$src("/images/authors/default.png"),
+                        $elm$html$Html$Attributes$src("/images/authors/default.webp"),
                         _VirtualDom_style_fn("color", "transparent")
                     ]), _List_Nil),
                     $elm$html$Html$h3_fn(_List_fromArray([
@@ -18402,8 +18500,21 @@
         o: $dillonkearns$elm_pages$BackendTask$fail($dillonkearns$elm_pages$FatalError$fromString("")),
         aV: $author$project$Route$TechBlog$head
     }));
+    var $author$project$Settings$xID = $elm$core$Maybe$Nothing;
     var $author$project$Route$TechBlog$Slug_$head = function (app) {
         var imagePath = $elm$core$Maybe$withDefault_fn("/media/blog-image.png", app.o.aT.bd.gD);
+        var creatorHeader = function () {
+            var _v1 = $author$project$Settings$xID;
+            if (!_v1.$) {
+                var xID = _v1.a;
+                return _List_fromArray([
+                    $dillonkearns$elm_pages$Head$metaName_fn("twitter:creator", $dillonkearns$elm_pages$Head$raw(xID))
+                ]);
+            }
+            else {
+                return _List_Nil;
+            }
+        }();
         var authorsHeader = function () {
             var _v0 = app.o.aT.bd.f0;
             if (!_v0.b) {
@@ -18440,10 +18551,10 @@
             j7: $elm$core$Maybe$Nothing,
             k2: $author$project$Settings$title,
             k8: app.o.aT.bd.k8
-        })), _Utils_ap(authorsHeader, _List_fromArray([
+        })), _Utils_ap(creatorHeader, _Utils_ap(authorsHeader, _List_fromArray([
             $dillonkearns$elm_pages$Head$metaName_fn("twitter:label2", $dillonkearns$elm_pages$Head$raw("Reading time")),
             $dillonkearns$elm_pages$Head$metaName_fn("twitter:data2", $dillonkearns$elm_pages$Head$raw($elm$core$String$fromInt(app.o.aT.bd.kL) + " min"))
-        ])));
+        ]))));
     };
     var $author$project$Content$TechBlogpost$getPublishedDate = function (_v0) {
         var status = _v0.hk;
