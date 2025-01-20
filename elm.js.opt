@@ -12038,7 +12038,7 @@
         return { $: 2, a: a };
     };
     var $elm$html$Html$article = _VirtualDom_nodeNS_fn(_VirtualDom_node_a0, "article"), $elm$html$Html$article_fn = $elm$html$Html$article.a2;
-    var $author$project$Route$baseUrl = "/try-elm-pages-2";
+    var $author$project$Route$baseUrl = "/";
     var $author$project$Route$baseUrlAsPath = $elm$core$List$filter_fn(function (item) {
         return !$elm$core$String$isEmpty(item);
     }, $elm$core$String$split_fn("/", $author$project$Route$baseUrl));
