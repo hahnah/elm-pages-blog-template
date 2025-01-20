@@ -22051,7 +22051,7 @@
                         $elm$html$Html$div_fn(_List_Nil, _List_fromArray([
                             $elm$html$Html$a_fn(_List_fromArray([
                                 $elm$virtual_dom$VirtualDom$attribute_fn("aria-label", $author$project$Settings$title),
-                                $elm$html$Html$Attributes$href("/")
+                                $elm$html$Html$Attributes$href($author$project$Settings$basePath)
                             ]), _List_fromArray([
                                 $elm$html$Html$div_fn(_List_fromArray([
                                     $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "flex items-center justify-between")
@@ -22089,7 +22089,7 @@
                                 $elm$html$Html$text("\u2022")
                             ])),
                             $elm$html$Html$a_fn(_List_fromArray([
-                                $elm$html$Html$Attributes$href("/"),
+                                $elm$html$Html$Attributes$href($author$project$Settings$basePath),
                                 $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "hover:underline")
                             ]), _List_fromArray([
                                 $elm$html$Html$text($author$project$Settings$title)
