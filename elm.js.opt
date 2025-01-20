@@ -12038,7 +12038,7 @@
         return { $: 2, a: a };
     };
     var $elm$html$Html$article = _VirtualDom_nodeNS_fn(_VirtualDom_node_a0, "article"), $elm$html$Html$article_fn = $elm$html$Html$article.a2;
-    var $author$project$Route$baseUrl = "/try-elm-pages-2";
+    var $author$project$Route$baseUrl = "/";
     var $author$project$Route$baseUrlAsPath = $elm$core$List$filter_fn(function (item) {
         return !$elm$core$String$isEmpty(item);
     }, $elm$core$String$split_fn("/", $author$project$Route$baseUrl));
@@ -13265,7 +13265,7 @@
         o: $dillonkearns$elm_pages$BackendTask$fail($dillonkearns$elm_pages$FatalError$fromString("")),
         aV: $author$project$Route$LifeBlog$head
     }));
-    var $author$project$Settings$basePath = "/try-elm-pages-2";
+    var $author$project$Settings$basePath = "/";
     var $author$project$Settings$domain = "hahnah.github.io";
     var $author$project$Settings$canonicalUrl = "https://" + ($author$project$Settings$domain + $author$project$Settings$basePath);
     var $author$project$Route$LifeBlog$Slug_$head = function (app) {
@@ -21956,15 +21956,11 @@
     var $elm$html$Html$Events$onClick = function (msg) {
         return $elm$html$Html$Events$on_fn("click", $elm$json$Json$Decode$succeed(msg));
     };
-    var $author$project$Settings$appendToBasePath = function (path) {
-        return _Utils_ap($author$project$Settings$basePath, path);
-    };
     var $author$project$Layout$viewMainMenuItem = function (_v0) {
         var route = _v0.cB;
         var label = _v0.cx;
         return $author$project$Route$link_fn(_List_fromArray([
-            $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "hidden sm:block font-medium text-gray-900 dark:text-gray-100 hover:underline decoration-primary-500"),
-            $elm$html$Html$Attributes$href($author$project$Settings$appendToBasePath($author$project$Route$toString(route)))
+            $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "hidden sm:block font-medium text-gray-900 dark:text-gray-100 hover:underline decoration-primary-500")
         ]), _List_fromArray([
             $elm$html$Html$text(label)
         ]), route);
