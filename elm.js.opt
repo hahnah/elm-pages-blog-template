@@ -4110,7 +4110,7 @@
     var $dillonkearns$elm_pages$Head$Seo$summary = function (config) {
         return $dillonkearns$elm_pages$Head$Seo$buildSummary_fn(config, 0);
     };
-    var $author$project$Settings$title = "elm blog";
+    var $author$project$Settings$title = "Hahnah's Site";
     var $dillonkearns$elm_pages$Head$Seo$Content_fn = function (a, b) {
         return { $: 0, a: a, b: b };
     }, $dillonkearns$elm_pages$Head$Seo$Content = F2($dillonkearns$elm_pages$Head$Seo$Content_fn);
@@ -21989,7 +21989,7 @@
         return _Utils_Tuple2(_Utils_update(model, { cC: !model.cC }), $author$project$Effect$none);
     }, $author$project$Shared$update = F2($author$project$Shared$update_fn);
     var $author$project$Shared$MenuClicked = 0;
-    var $author$project$Settings$author = "Tomas Latal";
+    var $author$project$Settings$author = "Hahnah";
     var $elm$html$Html$source = _VirtualDom_nodeNS_fn(_VirtualDom_node_a0, "source"), $elm$html$Html$source_fn = $elm$html$Html$source.a2;
     var $author$project$Layout$background = $elm$html$Html$div_fn(_List_fromArray([
         $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "absolute z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none")
@@ -22023,6 +22023,7 @@
             ]))
         ]))
     ]));
+    var $author$project$Settings$copyrightYear = "2025";
     var $elm$html$Html$footer = _VirtualDom_nodeNS_fn(_VirtualDom_node_a0, "footer"), $elm$html$Html$footer_fn = $elm$html$Html$footer.a2;
     var $elm$html$Html$header = _VirtualDom_nodeNS_fn(_VirtualDom_node_a0, "header"), $elm$html$Html$header_fn = $elm$html$Html$header.a2;
     var $elm$svg$Svg$Attributes$fillRule_a0 = "fill-rule", $elm$svg$Svg$Attributes$fillRule = _VirtualDom_attribute($elm$svg$Svg$Attributes$fillRule_a0);
@@ -22194,7 +22195,7 @@
                                 $elm$html$Html$text("\u2022")
                             ])),
                             $elm$html$Html$div_fn(_List_Nil, _List_fromArray([
-                                $elm$html$Html$text("\u00A9 2023")
+                                $elm$html$Html$text("\u00A9 " + $author$project$Settings$copyrightYear)
                             ])),
                             $elm$html$Html$div_fn(_List_Nil, _List_fromArray([
                                 $elm$html$Html$text("\u2022")
@@ -22212,10 +22213,10 @@
                             $elm$html$Html$a_fn(_List_fromArray([
                                 $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$target_a0, "_blank"),
                                 _VirtualDom_attribute_fn($elm$html$Html$Attributes$rel_a0, "noopener noreferrer"),
-                                $elm$html$Html$Attributes$href("https://github.com/kraklin/elm-pages-blog-starter"),
+                                $elm$html$Html$Attributes$href("https://github.com/hahnah/elm-pages-blog-template"),
                                 $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "hover:underline")
                             ]), _List_fromArray([
-                                $elm$html$Html$text("elm-pages blog template")
+                                $elm$html$Html$text("source code")
                             ]))
                         ]))
                     ]))
