@@ -13265,7 +13265,7 @@
         o: $dillonkearns$elm_pages$BackendTask$fail($dillonkearns$elm_pages$FatalError$fromString("")),
         aV: $author$project$Route$LifeBlog$head
     }));
-    var $author$project$Settings$basePath = "/try-elm-pages-2/";
+    var $author$project$Settings$basePath = "/try-elm-pages-2";
     var $author$project$Settings$domain = "hahnah.github.io";
     var $author$project$Settings$canonicalUrl = "https://" + ($author$project$Settings$domain + $author$project$Settings$basePath);
     var $author$project$Route$LifeBlog$Slug_$head = function (app) {
