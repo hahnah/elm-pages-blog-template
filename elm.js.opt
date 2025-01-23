@@ -12207,7 +12207,7 @@
     var $elm$html$Html$dl = _VirtualDom_nodeNS_fn(_VirtualDom_node_a0, "dl"), $elm$html$Html$dl_fn = $elm$html$Html$dl.a2;
     var $elm$html$Html$dt = _VirtualDom_nodeNS_fn(_VirtualDom_node_a0, "dt"), $elm$html$Html$dt_fn = $elm$html$Html$dt.a2;
     var $elm$html$Html$time = _VirtualDom_nodeNS_fn(_VirtualDom_node_a0, "time"), $elm$html$Html$time_fn = $elm$html$Html$time.a2;
-    var $author$project$Layout$TechBlogpost$viewPublishedDate = function (status) {
+    var $author$project$Layout$Blogpost$viewPublishedDate = function (status) {
         switch (status.$) {
             case 0:
                 return $elm$html$Html$span_fn(_List_fromArray([
@@ -12233,10 +12233,29 @@
                         ]))
                     ]))
                 ]));
+            case 3:
+                var publishedDate = status.a;
+                return $elm$html$Html$dl_fn(_List_Nil, _List_fromArray([
+                    $elm$html$Html$dt_fn(_List_fromArray([
+                        $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "sr-only")
+                    ]), _List_fromArray([
+                        $elm$html$Html$text("Published on")
+                    ])),
+                    $elm$html$Html$dd_fn(_List_fromArray([
+                        $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "leading-6 text-gray-500 dark:text-gray-400")
+                    ]), _List_fromArray([
+                        $elm$html$Html$time_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$html$Html$Attributes$datetime_a0, $justinmimbs$date$Date$toIsoString(publishedDate))
+                        ]), _List_fromArray([
+                            $elm$html$Html$text(A2($justinmimbs$date$Date$format, "MMM d, YYYY", publishedDate))
+                        ]))
+                    ]))
+                ]));
             default:
                 return $elm_community$html_extra$Html$Extra$nothing;
         }
     };
+    var $author$project$Layout$TechBlogpost$viewPublishedDate = $author$project$Layout$Blogpost$viewPublishedDate;
     var $author$project$Route$Tags__Slug_ = function (a) {
         return { $: 1, a: a };
     };
@@ -13210,36 +13229,7 @@
     var $author$project$Route$LifeBlog__Slug_ = function (a) {
         return { $: 0, a: a };
     };
-    var $author$project$Layout$LifeBlogpost$viewPublishedDate = function (status) {
-        switch (status.$) {
-            case 0:
-                return $elm$html$Html$span_fn(_List_fromArray([
-                    $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "leading-6 text-gray-500 dark:text-gray-400")
-                ]), _List_fromArray([
-                    $elm$html$Html$text("Draft")
-                ]));
-            case 2:
-                var date = status.a;
-                return $elm$html$Html$dl_fn(_List_Nil, _List_fromArray([
-                    $elm$html$Html$dt_fn(_List_fromArray([
-                        $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "sr-only")
-                    ]), _List_fromArray([
-                        $elm$html$Html$text("Published on")
-                    ])),
-                    $elm$html$Html$dd_fn(_List_fromArray([
-                        $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "leading-6 text-gray-500 dark:text-gray-400")
-                    ]), _List_fromArray([
-                        $elm$html$Html$time_fn(_List_fromArray([
-                            _VirtualDom_attribute_fn($elm$html$Html$Attributes$datetime_a0, $justinmimbs$date$Date$toIsoString(date))
-                        ]), _List_fromArray([
-                            $elm$html$Html$text(A2($justinmimbs$date$Date$format, "MMM d, YYYY", date))
-                        ]))
-                    ]))
-                ]));
-            default:
-                return $elm_community$html_extra$Html$Extra$nothing;
-        }
-    };
+    var $author$project$Layout$LifeBlogpost$viewPublishedDate = $author$project$Layout$Blogpost$viewPublishedDate;
     var $author$project$Layout$LifeBlogpost$viewBlogpostMetadata = function (metadata) {
         return $elm$html$Html$article_fn(_List_fromArray([
             $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "space-y-2 flex flex-col xl:space-y-0")
@@ -15027,6 +15017,9 @@
         }
     }, _Json_decodeField_fn("category", $elm$json$Json$Decode$string));
     var $author$project$Content$BlogpostCommon$Published = { $: 1 };
+    var $author$project$Content$BlogpostCommon$PublishedAndUpdatedWithDate_fn = function (a, b) {
+        return { $: 3, a: a, b: b };
+    }, $author$project$Content$BlogpostCommon$PublishedAndUpdatedWithDate = F2($author$project$Content$BlogpostCommon$PublishedAndUpdatedWithDate_fn);
     var $author$project$Content$BlogpostCommon$PublishedWithDate = function (a) {
         return { $: 2, a: a };
     };
@@ -15180,21 +15173,42 @@
         $elm$parser$Parser$Advanced$map_fn($elm$core$Basics$always($elm$core$Result$Err("Expected a date only, not a date and time")), $elm$parser$Parser$chompIf($elm$core$Basics$eq("T"))),
         $elm$parser$Parser$succeed($elm$core$Result$Err("Expected a date only"))
     ])))))), $justinmimbs$date$Date$fromIsoString_a1 = $elm$core$Result$mapError(A2($elm$core$Basics$composeR, $elm$core$List$head, A2($elm$core$Basics$composeR, $elm$core$Maybe$map($justinmimbs$date$Date$deadEndToString), $elm$core$Maybe$withDefault("")))), $justinmimbs$date$Date$fromIsoString = A2($elm$core$Basics$composeR, $justinmimbs$date$Date$fromIsoString_a0, $justinmimbs$date$Date$fromIsoString_a1);
-    var $author$project$Content$LifeBlogpost$decodeStatus = _Json_map2_fn(F2(function (publishedDate, statusString) {
-        var _v0 = _Utils_Tuple2(statusString, publishedDate);
-        if ((!_v0.a.$) && (_v0.a.a === "draft")) {
-            return $author$project$Content$BlogpostCommon$Draft;
-        }
-        else {
+    var $author$project$Content$LifeBlogpost$decodeStatus = _Json_map3_fn(F3(function (publishedDate, updatedDate, statusString) {
+        var _v0 = _Utils_Tuple3(statusString, publishedDate, updatedDate);
+        _v0$0: while (true) {
             if (!_v0.b.$) {
-                var date = _v0.b.a;
-                return $author$project$Content$BlogpostCommon$PublishedWithDate(date);
+                if (_v0.c.$ === 1) {
+                    if ((!_v0.a.$) && (_v0.a.a === "draft")) {
+                        break _v0$0;
+                    }
+                    else {
+                        var date = _v0.b.a;
+                        var _v1 = _v0.c;
+                        return $author$project$Content$BlogpostCommon$PublishedWithDate(date);
+                    }
+                }
+                else {
+                    if ((!_v0.a.$) && (_v0.a.a === "draft")) {
+                        break _v0$0;
+                    }
+                    else {
+                        var date1 = _v0.b.a;
+                        var date2 = _v0.c.a;
+                        return $author$project$Content$BlogpostCommon$PublishedAndUpdatedWithDate_fn(date1, date2);
+                    }
+                }
             }
             else {
-                return $author$project$Content$BlogpostCommon$Published;
+                if ((!_v0.a.$) && (_v0.a.a === "draft")) {
+                    break _v0$0;
+                }
+                else {
+                    return $author$project$Content$BlogpostCommon$Published;
+                }
             }
         }
-    }), $elm$json$Json$Decode$maybe(_Json_decodeField_fn("published", _Json_map1_fn(A2($elm$core$Basics$composeL, $elm$core$Result$withDefault($justinmimbs$date$Date$fromRataDie(1)), $justinmimbs$date$Date$fromIsoString), $elm$json$Json$Decode$string))), $elm$json$Json$Decode$maybe(_Json_decodeField_fn("status", $elm$json$Json$Decode$string)));
+        return $author$project$Content$BlogpostCommon$Draft;
+    }), $elm$json$Json$Decode$maybe(_Json_decodeField_fn("published", _Json_map1_fn(A2($elm$core$Basics$composeL, $elm$core$Result$withDefault($justinmimbs$date$Date$fromRataDie(1)), $justinmimbs$date$Date$fromIsoString), $elm$json$Json$Decode$string))), $elm$json$Json$Decode$maybe(_Json_decodeField_fn("updated", _Json_map1_fn(A2($elm$core$Basics$composeL, $elm$core$Result$withDefault($justinmimbs$date$Date$fromRataDie(1)), $justinmimbs$date$Date$fromIsoString), $elm$json$Json$Decode$string))), $elm$json$Json$Decode$maybe(_Json_decodeField_fn("status", $elm$json$Json$Decode$string)));
     var $author$project$Content$LifeBlogpost$metadataDecoder_fn = function (authorsDict, slug) {
         return _Json_map2_fn($elm_community$json_extra$Json$Decode$Extra$andMap_a0, $elm$json$Json$Decode$succeed(1), _Json_map2_fn($elm_community$json_extra$Json$Decode$Extra$andMap_a0, $author$project$Content$LifeBlogpost$decodeStatus, _Json_map2_fn($elm_community$json_extra$Json$Decode$Extra$andMap_a0, _Json_map1_fn(function (authors) {
             return $elm$core$List$filterMap_fn(function (authorSlug) {
@@ -17744,6 +17758,87 @@
             return "Markdown error.";
         }, $dillonkearns$elm_markdown$Markdown$Parser$parse(markdownString))));
     };
+    var $phosphor_icons$phosphor_elm$Phosphor$clockClockwise = function (weight) {
+        var elements = function () {
+            switch (weight) {
+                case 3:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M140,80v41.21l34.17,20.5a12,12,0,1,1-12.34,20.58l-40-24A12,12,0,0,1,116,128V80a12,12,0,0,1,24,0Zm84-28a12,12,0,0,0-12,12v7.37c-4.21-4.67-8.58-9.31-13.29-14.08a100,100,0,1,0-2.07,143.44,12,12,0,0,0-16.48-17.46,76,76,0,1,1,1.53-109.06C187.61,80.2,193,86,198.23,92H184a12,12,0,0,0,0,24h40a12,12,0,0,0,12-12V64A12,12,0,0,0,224,52Z")
+                        ]), _List_Nil)
+                    ]);
+                case 5:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M216,128a88,88,0,1,1-88-88A88,88,0,0,1,216,128Z"),
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$opacity_a0, "0.2")
+                        ]), _List_Nil),
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M136,80v43.47l36.12,21.67a8,8,0,0,1-8.24,13.72l-40-24A8,8,0,0,1,120,128V80a8,8,0,0,1,16,0Zm88-24a8,8,0,0,0-8,8V82c-6.35-7.36-12.83-14.45-20.12-21.83a96,96,0,1,0-2,137.7,8,8,0,0,0-11-11.64A80,80,0,1,1,184.54,71.4C192.68,79.64,199.81,87.58,207,96H184a8,8,0,0,0,0,16h40a8,8,0,0,0,8-8V64A8,8,0,0,0,224,56Z")
+                        ]), _List_Nil)
+                    ]);
+                case 4:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M136,80v43.47l36.12,21.67a8,8,0,0,1-8.24,13.72l-40-24A8,8,0,0,1,120,128V80a8,8,0,0,1,16,0Zm91.06-23.39a8,8,0,0,0-8.72,1.73L206,70.71c-3.23-3.51-6.56-7-10.1-10.59a96,96,0,1,0-2,137.7,8,8,0,0,0-11-11.64A80,80,0,1,1,184.54,71.4c3.54,3.58,6.87,7.1,10.11,10.63L178.34,98.34A8,8,0,0,0,184,112h40a8,8,0,0,0,8-8V64A8,8,0,0,0,227.06,56.61Z")
+                        ]), _List_Nil)
+                    ]);
+                case 1:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M134,80v44.6l37.09,22.25a6,6,0,0,1-6.18,10.3l-40-24A6,6,0,0,1,122,128V80a6,6,0,0,1,12,0Zm90-22a6,6,0,0,0-6,6V87.36c-7.48-8.83-14.94-17.13-23.53-25.83a94,94,0,1,0-1.95,134.83,6,6,0,0,0-8.24-8.72A82,82,0,1,1,186,70c9.24,9.36,17.18,18.3,25.31,28H184a6,6,0,0,0,0,12h40a6,6,0,0,0,6-6V64A6,6,0,0,0,224,58Z")
+                        ]), _List_Nil)
+                    ]);
+                case 2:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M136,80v43.47l36.12,21.67a8,8,0,0,1-8.24,13.72l-40-24A8,8,0,0,1,120,128V80a8,8,0,0,1,16,0Zm88-24a8,8,0,0,0-8,8V82c-6.35-7.36-12.83-14.45-20.12-21.83a96,96,0,1,0-2,137.7,8,8,0,0,0-11-11.64A80,80,0,1,1,184.54,71.4C192.68,79.64,199.81,87.58,207,96H184a8,8,0,0,0,0,16h40a8,8,0,0,0,8-8V64A8,8,0,0,0,224,56Z")
+                        ]), _List_Nil)
+                    ]);
+                default:
+                    return _List_fromArray([
+                        $elm$svg$Svg$path_fn(_List_fromArray([
+                            _VirtualDom_attribute_fn($elm$svg$Svg$Attributes$d_a0, "M132,80v45.74l38.06,22.83a4,4,0,0,1-4.12,6.86l-40-24A4,4,0,0,1,124,128V80a4,4,0,0,1,8,0Zm92-20a4,4,0,0,0-4,4V92.85C211.33,82.46,203,73,193.05,63a92,92,0,1,0-1.9,132,4,4,0,0,0-5.5-5.82,84,84,0,1,1,1.73-120.5C197.7,79,206.39,89,215.53,100H184a4,4,0,0,0,0,8h40a4,4,0,0,0,4-4V64A4,4,0,0,0,224,60Z")
+                        ]), _List_Nil)
+                    ]);
+            }
+        }();
+        return $phosphor_icons$phosphor_elm$Phosphor$makeBuilder(elements);
+    };
+    var $author$project$Layout$Blogpost$viewUpdatedDate = function (status) {
+        switch (status.$) {
+            case 0:
+                return $elm_community$html_extra$Html$Extra$nothing;
+            case 2:
+                return $elm_community$html_extra$Html$Extra$nothing;
+            case 3:
+                var updatedDate = status.b;
+                return $elm$html$Html$dl_fn(_List_Nil, _List_fromArray([
+                    $elm$html$Html$dt_fn(_List_fromArray([
+                        $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "sr-only")
+                    ]), _List_fromArray([
+                        $elm$html$Html$text("Updated on")
+                    ])),
+                    $elm$html$Html$dd_fn(_List_fromArray([
+                        $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "leading-6 text-gray-500 dark:text-gray-400")
+                    ]), _List_fromArray([
+                        $elm$html$Html$div_fn(_List_fromArray([
+                            $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "flex items-center")
+                        ]), _List_fromArray([
+                            $phosphor_icons$phosphor_elm$Phosphor$toHtml_fn(_List_Nil, $phosphor_icons$phosphor_elm$Phosphor$withClass_fn("fill-current text-gray-500 dark:text-gray-400 h-4 w-4", $phosphor_icons$phosphor_elm$Phosphor$clockClockwise(2))),
+                            $elm$html$Html$time_fn(_List_fromArray([
+                                _VirtualDom_attribute_fn($elm$html$Html$Attributes$datetime_a0, $justinmimbs$date$Date$toIsoString(updatedDate))
+                            ]), _List_fromArray([
+                                $elm$html$Html$text(A2($justinmimbs$date$Date$format, "MMM d, YYYY", updatedDate))
+                            ]))
+                        ]))
+                    ]))
+                ]));
+            default:
+                return $elm_community$html_extra$Html$Extra$nothing;
+        }
+    };
+    var $author$project$Layout$LifeBlogpost$viewUpdatedDate = $author$project$Layout$Blogpost$viewUpdatedDate;
     var $author$project$Layout$LifeBlogpost$viewBlogpost = function (_v0) {
         var nextPost = _v0.ki;
         var previousPost = _v0.kH;
@@ -17809,9 +17904,10 @@
                         }, blogpostAuthors)))
                     ])),
                     $elm$html$Html$div_fn(_List_fromArray([
-                        $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "flex space-x-4 text-base")
+                        $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "flex flex-wrap space-x-4 text-base")
                     ]), _List_fromArray([
                         $author$project$Layout$LifeBlogpost$viewPublishedDate(metadata.hk),
+                        $author$project$Layout$LifeBlogpost$viewUpdatedDate(metadata.hk),
                         $elm$html$Html$span_fn(_List_Nil, _List_fromArray([
                             $elm$html$Html$text($elm$core$String$fromInt(metadata.kL)),
                             $elm$html$Html$text(" min reading time")
@@ -18046,21 +18142,42 @@
                 return $elm$json$Json$Decode$succeed(2);
         }
     }, _Json_decodeField_fn("category", $elm$json$Json$Decode$string));
-    var $author$project$Content$AllBlogpost$decodeStatus = _Json_map2_fn(F2(function (publishedDate, statusString) {
-        var _v0 = _Utils_Tuple2(statusString, publishedDate);
-        if ((!_v0.a.$) && (_v0.a.a === "draft")) {
-            return $author$project$Content$BlogpostCommon$Draft;
-        }
-        else {
+    var $author$project$Content$AllBlogpost$decodeStatus = _Json_map3_fn(F3(function (publishedDate, updatedDate, statusString) {
+        var _v0 = _Utils_Tuple3(statusString, publishedDate, updatedDate);
+        _v0$0: while (true) {
             if (!_v0.b.$) {
-                var date = _v0.b.a;
-                return $author$project$Content$BlogpostCommon$PublishedWithDate(date);
+                if (_v0.c.$ === 1) {
+                    if ((!_v0.a.$) && (_v0.a.a === "draft")) {
+                        break _v0$0;
+                    }
+                    else {
+                        var date = _v0.b.a;
+                        var _v1 = _v0.c;
+                        return $author$project$Content$BlogpostCommon$PublishedWithDate(date);
+                    }
+                }
+                else {
+                    if ((!_v0.a.$) && (_v0.a.a === "draft")) {
+                        break _v0$0;
+                    }
+                    else {
+                        var date1 = _v0.b.a;
+                        var date2 = _v0.c.a;
+                        return $author$project$Content$BlogpostCommon$PublishedAndUpdatedWithDate_fn(date1, date2);
+                    }
+                }
             }
             else {
-                return $author$project$Content$BlogpostCommon$Published;
+                if ((!_v0.a.$) && (_v0.a.a === "draft")) {
+                    break _v0$0;
+                }
+                else {
+                    return $author$project$Content$BlogpostCommon$Published;
+                }
             }
         }
-    }), $elm$json$Json$Decode$maybe(_Json_decodeField_fn("published", _Json_map1_fn(A2($elm$core$Basics$composeL, $elm$core$Result$withDefault($justinmimbs$date$Date$fromRataDie(1)), $justinmimbs$date$Date$fromIsoString), $elm$json$Json$Decode$string))), $elm$json$Json$Decode$maybe(_Json_decodeField_fn("status", $elm$json$Json$Decode$string)));
+        return $author$project$Content$BlogpostCommon$Draft;
+    }), $elm$json$Json$Decode$maybe(_Json_decodeField_fn("published", _Json_map1_fn(A2($elm$core$Basics$composeL, $elm$core$Result$withDefault($justinmimbs$date$Date$fromRataDie(1)), $justinmimbs$date$Date$fromIsoString), $elm$json$Json$Decode$string))), $elm$json$Json$Decode$maybe(_Json_decodeField_fn("updated", _Json_map1_fn(A2($elm$core$Basics$composeL, $elm$core$Result$withDefault($justinmimbs$date$Date$fromRataDie(1)), $justinmimbs$date$Date$fromIsoString), $elm$json$Json$Decode$string))), $elm$json$Json$Decode$maybe(_Json_decodeField_fn("status", $elm$json$Json$Decode$string)));
     var $author$project$Content$AllBlogpost$metadataDecoder_fn = function (authorsDict, slug) {
         return _Json_map2_fn($elm_community$json_extra$Json$Decode$Extra$andMap_a0, $elm$json$Json$Decode$succeed(1), _Json_map2_fn($elm_community$json_extra$Json$Decode$Extra$andMap_a0, $author$project$Content$AllBlogpost$decodeStatus, _Json_map2_fn($elm_community$json_extra$Json$Decode$Extra$andMap_a0, _Json_map1_fn(function (authors) {
             return $elm$core$List$filterMap_fn(function (authorSlug) {
@@ -18208,36 +18325,6 @@
         };
     }), $author$project$Content$AllBlogpost$allTags);
     var $author$project$Route$TechBlog = { $: 6 };
-    var $author$project$Layout$Blogpost$viewPublishedDate = function (status) {
-        switch (status.$) {
-            case 0:
-                return $elm$html$Html$span_fn(_List_fromArray([
-                    $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "leading-6 text-gray-500 dark:text-gray-400")
-                ]), _List_fromArray([
-                    $elm$html$Html$text("Draft")
-                ]));
-            case 2:
-                var date = status.a;
-                return $elm$html$Html$dl_fn(_List_Nil, _List_fromArray([
-                    $elm$html$Html$dt_fn(_List_fromArray([
-                        $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "sr-only")
-                    ]), _List_fromArray([
-                        $elm$html$Html$text("Published on")
-                    ])),
-                    $elm$html$Html$dd_fn(_List_fromArray([
-                        $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "leading-6 text-gray-500 dark:text-gray-400")
-                    ]), _List_fromArray([
-                        $elm$html$Html$time_fn(_List_fromArray([
-                            _VirtualDom_attribute_fn($elm$html$Html$Attributes$datetime_a0, $justinmimbs$date$Date$toIsoString(date))
-                        ]), _List_fromArray([
-                            $elm$html$Html$text(A2($justinmimbs$date$Date$format, "MMM d, YYYY", date))
-                        ]))
-                    ]))
-                ]));
-            default:
-                return $elm_community$html_extra$Html$Extra$nothing;
-        }
-    };
     var $author$project$Layout$Blogpost$viewBlogpostMetadata = function (metadata) {
         return $elm$html$Html$article_fn(_List_fromArray([
             $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "space-y-2 flex flex-col xl:space-y-0")
@@ -18576,21 +18663,42 @@
                 return $elm$json$Json$Decode$succeed(2);
         }
     }, _Json_decodeField_fn("category", $elm$json$Json$Decode$string));
-    var $author$project$Content$TechBlogpost$decodeStatus = _Json_map2_fn(F2(function (publishedDate, statusString) {
-        var _v0 = _Utils_Tuple2(statusString, publishedDate);
-        if ((!_v0.a.$) && (_v0.a.a === "draft")) {
-            return $author$project$Content$BlogpostCommon$Draft;
-        }
-        else {
+    var $author$project$Content$TechBlogpost$decodeStatus = _Json_map3_fn(F3(function (publishedDate, updatedDate, statusString) {
+        var _v0 = _Utils_Tuple3(statusString, publishedDate, updatedDate);
+        _v0$0: while (true) {
             if (!_v0.b.$) {
-                var date = _v0.b.a;
-                return $author$project$Content$BlogpostCommon$PublishedWithDate(date);
+                if (_v0.c.$ === 1) {
+                    if ((!_v0.a.$) && (_v0.a.a === "draft")) {
+                        break _v0$0;
+                    }
+                    else {
+                        var date = _v0.b.a;
+                        var _v1 = _v0.c;
+                        return $author$project$Content$BlogpostCommon$PublishedWithDate(date);
+                    }
+                }
+                else {
+                    if ((!_v0.a.$) && (_v0.a.a === "draft")) {
+                        break _v0$0;
+                    }
+                    else {
+                        var date1 = _v0.b.a;
+                        var date2 = _v0.c.a;
+                        return $author$project$Content$BlogpostCommon$PublishedAndUpdatedWithDate_fn(date1, date2);
+                    }
+                }
             }
             else {
-                return $author$project$Content$BlogpostCommon$Published;
+                if ((!_v0.a.$) && (_v0.a.a === "draft")) {
+                    break _v0$0;
+                }
+                else {
+                    return $author$project$Content$BlogpostCommon$Published;
+                }
             }
         }
-    }), $elm$json$Json$Decode$maybe(_Json_decodeField_fn("published", _Json_map1_fn(A2($elm$core$Basics$composeL, $elm$core$Result$withDefault($justinmimbs$date$Date$fromRataDie(1)), $justinmimbs$date$Date$fromIsoString), $elm$json$Json$Decode$string))), $elm$json$Json$Decode$maybe(_Json_decodeField_fn("status", $elm$json$Json$Decode$string)));
+        return $author$project$Content$BlogpostCommon$Draft;
+    }), $elm$json$Json$Decode$maybe(_Json_decodeField_fn("published", _Json_map1_fn(A2($elm$core$Basics$composeL, $elm$core$Result$withDefault($justinmimbs$date$Date$fromRataDie(1)), $justinmimbs$date$Date$fromIsoString), $elm$json$Json$Decode$string))), $elm$json$Json$Decode$maybe(_Json_decodeField_fn("updated", _Json_map1_fn(A2($elm$core$Basics$composeL, $elm$core$Result$withDefault($justinmimbs$date$Date$fromRataDie(1)), $justinmimbs$date$Date$fromIsoString), $elm$json$Json$Decode$string))), $elm$json$Json$Decode$maybe(_Json_decodeField_fn("status", $elm$json$Json$Decode$string)));
     var $author$project$Content$TechBlogpost$metadataDecoder_fn = function (authorsDict, slug) {
         return _Json_map2_fn($elm_community$json_extra$Json$Decode$Extra$andMap_a0, $elm$json$Json$Decode$succeed(1), _Json_map2_fn($elm_community$json_extra$Json$Decode$Extra$andMap_a0, $author$project$Content$TechBlogpost$decodeStatus, _Json_map2_fn($elm_community$json_extra$Json$Decode$Extra$andMap_a0, _Json_map1_fn(function (authors) {
             return $elm$core$List$filterMap_fn(function (authorSlug) {
@@ -18693,6 +18801,7 @@
             ]), _List_Nil);
         }, authors));
     };
+    var $author$project$Layout$TechBlogpost$viewUpdatedDate = $author$project$Layout$Blogpost$viewUpdatedDate;
     var $author$project$Layout$TechBlogpost$viewBlogpost = function (_v0) {
         var nextPost = _v0.ki;
         var previousPost = _v0.kH;
@@ -18758,9 +18867,10 @@
                         }, blogpostAuthors)))
                     ])),
                     $elm$html$Html$div_fn(_List_fromArray([
-                        $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "flex space-x-4 text-base")
+                        $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "flex flex-wrap space-x-4 text-base")
                     ]), _List_fromArray([
                         $author$project$Layout$TechBlogpost$viewPublishedDate(metadata.hk),
+                        $author$project$Layout$TechBlogpost$viewUpdatedDate(metadata.hk),
                         $elm$html$Html$span_fn(_List_Nil, _List_fromArray([
                             $elm$html$Html$text($elm$core$String$fromInt(metadata.kL)),
                             $elm$html$Html$text(" min reading time")
@@ -20921,6 +21031,8 @@
             case 1:
                 return $lamdera$codecs$Lamdera$Wire3$succeedDecode($author$project$Content$BlogpostCommon$Published);
             case 2:
+                return $lamdera$codecs$Lamdera$Wire3$andMapDecode_fn($justinmimbs$date$Date$w3_decode_Date, $lamdera$codecs$Lamdera$Wire3$andMapDecode_fn($justinmimbs$date$Date$w3_decode_Date, $lamdera$codecs$Lamdera$Wire3$succeedDecode($author$project$Content$BlogpostCommon$PublishedAndUpdatedWithDate)));
+            case 3:
                 return $lamdera$codecs$Lamdera$Wire3$andMapDecode_fn($justinmimbs$date$Date$w3_decode_Date, $lamdera$codecs$Lamdera$Wire3$succeedDecode($author$project$Content$BlogpostCommon$PublishedWithDate));
             default:
                 return $lamdera$codecs$Lamdera$Wire3$failDecode;
@@ -21088,10 +21200,18 @@
                 return $elm$bytes$Bytes$Encode$unsignedInt8(0);
             case 1:
                 return $elm$bytes$Bytes$Encode$unsignedInt8(1);
+            case 3:
+                var v0 = w3v.a;
+                var v1 = w3v.b;
+                return $lamdera$codecs$Lamdera$Wire3$encodeSequenceWithoutLength(_List_fromArray([
+                    $elm$bytes$Bytes$Encode$unsignedInt8(2),
+                    $justinmimbs$date$Date$w3_encode_Date(v0),
+                    $justinmimbs$date$Date$w3_encode_Date(v1)
+                ]));
             default:
                 var v0 = w3v.a;
                 return $lamdera$codecs$Lamdera$Wire3$encodeSequenceWithoutLength(_List_fromArray([
-                    $elm$bytes$Bytes$Encode$unsignedInt8(2),
+                    $elm$bytes$Bytes$Encode$unsignedInt8(3),
                     $justinmimbs$date$Date$w3_encode_Date(v0)
                 ]));
         }
