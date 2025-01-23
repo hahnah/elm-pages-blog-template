@@ -4110,7 +4110,7 @@
     var $dillonkearns$elm_pages$Head$Seo$summary = function (config) {
         return $dillonkearns$elm_pages$Head$Seo$buildSummary_fn(config, 0);
     };
-    var $author$project$Settings$title = "Hahnah's Site";
+    var $author$project$Settings$title = "Hahnah's elm-pages Blog Template";
     var $dillonkearns$elm_pages$Head$Seo$Content_fn = function (a, b) {
         return { $: 0, a: a, b: b };
     }, $dillonkearns$elm_pages$Head$Seo$Content = F2($dillonkearns$elm_pages$Head$Seo$Content_fn);
@@ -12108,7 +12108,7 @@
         o: $dillonkearns$elm_pages$BackendTask$fail($dillonkearns$elm_pages$FatalError$fromString("")),
         aV: $author$project$Route$About$head
     }));
-    var $author$project$Settings$subtitle = "A blog starter kit created with elm-pages and TailwindCSS";
+    var $author$project$Settings$subtitle = "A blog template created with elm-pages and TailwindCSS by Hahnah (Natsuki Harai).";
     var $dillonkearns$elm_pages$Head$Twitter$Large = 1;
     var $dillonkearns$elm_pages$Head$Seo$summaryLarge = function (config) {
         return $dillonkearns$elm_pages$Head$Seo$buildSummary_fn(config, 1);
@@ -12229,7 +12229,7 @@
                         $elm$html$Html$time_fn(_List_fromArray([
                             _VirtualDom_attribute_fn($elm$html$Html$Attributes$datetime_a0, $justinmimbs$date$Date$toIsoString(date))
                         ]), _List_fromArray([
-                            $elm$html$Html$text(A2($justinmimbs$date$Date$format, "d. MMM YYYY", date))
+                            $elm$html$Html$text(A2($justinmimbs$date$Date$format, "MMM d, YYYY", date))
                         ]))
                     ]))
                 ]));
@@ -13232,7 +13232,7 @@
                         $elm$html$Html$time_fn(_List_fromArray([
                             _VirtualDom_attribute_fn($elm$html$Html$Attributes$datetime_a0, $justinmimbs$date$Date$toIsoString(date))
                         ]), _List_fromArray([
-                            $elm$html$Html$text(A2($justinmimbs$date$Date$format, "d. MMM YYYY", date))
+                            $elm$html$Html$text(A2($justinmimbs$date$Date$format, "MMM d, YYYY", date))
                         ]))
                     ]))
                 ]));
@@ -18230,7 +18230,7 @@
                         $elm$html$Html$time_fn(_List_fromArray([
                             _VirtualDom_attribute_fn($elm$html$Html$Attributes$datetime_a0, $justinmimbs$date$Date$toIsoString(date))
                         ]), _List_fromArray([
-                            $elm$html$Html$text(A2($justinmimbs$date$Date$format, "d. MMM YYYY", date))
+                            $elm$html$Html$text(A2($justinmimbs$date$Date$format, "MMM d, YYYY", date))
                         ]))
                     ]))
                 ]));
