@@ -12133,6 +12133,9 @@
     var $author$project$Route$Index$head = function (_v0) {
         return $dillonkearns$elm_pages$Head$Seo$website($dillonkearns$elm_pages$Head$Seo$summaryLarge({ jc: $elm$core$Maybe$Nothing, jq: $author$project$Settings$subtitle, gC: $author$project$Settings$logoImageForSeo, j5: $author$project$Settings$locale, k4: $author$project$Settings$title, lb: $author$project$Settings$title }));
     };
+    var $author$project$Route$LifeBlog__Slug_ = function (a) {
+        return { $: 0, a: a };
+    };
     var $author$project$Route$TechBlog__Slug_ = function (a) {
         return { $: 2, a: a };
     };
@@ -13161,7 +13164,17 @@
                                     $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "text-gray-900 hover:underline decoration-primary-600 dark:text-gray-100")
                                 ]), _List_fromArray([
                                     $elm$html$Html$text(metadata.lb)
-                                ]), $author$project$Route$TechBlog__Slug_({ fv: metadata.fv }))
+                                ]), function () {
+                                    var _v0 = metadata.f9;
+                                    switch (_v0) {
+                                        case 0:
+                                            return $author$project$Route$TechBlog__Slug_({ fv: metadata.fv });
+                                        case 1:
+                                            return $author$project$Route$LifeBlog__Slug_({ fv: metadata.fv });
+                                        default:
+                                            return $author$project$Route$TechBlog__Slug_({ fv: metadata.fv });
+                                    }
+                                }())
                             ])),
                             $elm_community$html_extra$Html$Extra$viewIf_fn(!$elm$core$List$isEmpty(metadata.hr), $elm$html$Html$div_fn(_List_fromArray([
                                 $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "flex flex-wrap space-x-4 xl:space-x-2")
@@ -13183,7 +13196,17 @@
                             $elm$virtual_dom$VirtualDom$attribute_fn("aria-label", "Read more about \"" + (metadata.lb + "\""))
                         ]), _List_fromArray([
                             $elm$html$Html$text("Read more \u2192")
-                        ]), $author$project$Route$TechBlog__Slug_({ fv: metadata.fv }))
+                        ]), function () {
+                            var _v1 = metadata.f9;
+                            switch (_v1) {
+                                case 0:
+                                    return $author$project$Route$TechBlog__Slug_({ fv: metadata.fv });
+                                case 1:
+                                    return $author$project$Route$LifeBlog__Slug_({ fv: metadata.fv });
+                                default:
+                                    return $author$project$Route$TechBlog__Slug_({ fv: metadata.fv });
+                            }
+                        }())
                     ]))
                 ]))
             ]))
@@ -13228,9 +13251,6 @@
     };
     var $elm$html$Html$Attributes$classList = function (classes) {
         return $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, $elm$core$String$join_fn(" ", $elm$core$List$map_fn($elm$core$Tuple$first, $elm$core$List$filter_fn($elm$core$Tuple$second, classes))));
-    };
-    var $author$project$Route$LifeBlog__Slug_ = function (a) {
-        return { $: 0, a: a };
     };
     var $author$project$Layout$LifeBlogpost$viewPublishedDate = $author$project$Layout$Blogpost$viewPublishedDate;
     var $author$project$Layout$LifeBlogpost$viewBlogpostMetadata = function (metadata) {
