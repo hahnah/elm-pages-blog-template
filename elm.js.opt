@@ -15035,9 +15035,9 @@
             return _Utils_Tuple2("ERROR", _List_Nil);
         }
     }))));
-    var $author$project$Content$LifeBlogpost$lifeBlogPostFiles = $dillonkearns$elm_pages$BackendTask$Glob$toBackendTask($dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal("index.md"), $dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal("/"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$wildcard, $dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal("/"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$recursiveWildcard, $dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal("content/life-blog/"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$captureFilePath_a0, $dillonkearns$elm_pages$BackendTask$Glob$succeed(F3(function (filePath, path, fileName) {
+    var $author$project$Content$LifeBlogpost$lifeBlogPostFiles = $dillonkearns$elm_pages$BackendTask$Glob$toBackendTask($dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal(".md"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$wildcard, $dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal("/"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$recursiveWildcard, $dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal("content/life-blog/"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$captureFilePath_a0, $dillonkearns$elm_pages$BackendTask$Glob$succeed(F3(function (filePath, path, fileName) {
         return { h5: filePath, kC: path, fv: fileName };
-    }))))))))));
+    })))))))));
     var $author$project$Content$BlogpostCommon$Metadata = function (title) {
         return function (slug) {
             return function (image) {
@@ -18192,7 +18192,7 @@
             }
         }));
     };
-    var $author$project$Content$AllBlogpost$allBlogPostFiles = $dillonkearns$elm_pages$BackendTask$Glob$toBackendTask($dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal("/index.md"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$wildcard, $dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal("/"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$oneOf(_Utils_Tuple2(_Utils_Tuple2("tech-blog", "tech-blog"), _List_fromArray([
+    var $author$project$Content$AllBlogpost$allBlogPostFiles = $dillonkearns$elm_pages$BackendTask$Glob$toBackendTask($dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal(".md"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$wildcard, $dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal("/"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$oneOf(_Utils_Tuple2(_Utils_Tuple2("tech-blog", "tech-blog"), _List_fromArray([
         _Utils_Tuple2("life-blog", "life-blog")
     ]))), $dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal("content/"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$captureFilePath_a0, $dillonkearns$elm_pages$BackendTask$Glob$succeed(F3(function (filePath, blogType, slug) {
         return {
@@ -18732,9 +18732,9 @@
             $dillonkearns$elm_pages$Head$metaName_fn("twitter:data2", $dillonkearns$elm_pages$Head$raw($elm$core$String$fromInt(app.o.ao.cz.kM) + " min"))
         ]))));
     };
-    var $author$project$Content$TechBlogpost$techBlogPostFiles = $dillonkearns$elm_pages$BackendTask$Glob$toBackendTask($dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal("index.md"), $dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal("/"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$wildcard, $dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal("/"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$recursiveWildcard, $dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal("content/tech-blog/"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$captureFilePath_a0, $dillonkearns$elm_pages$BackendTask$Glob$succeed(F3(function (filePath, path, fileName) {
+    var $author$project$Content$TechBlogpost$techBlogPostFiles = $dillonkearns$elm_pages$BackendTask$Glob$toBackendTask($dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal(".md"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$wildcard, $dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal("/"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$recursiveWildcard, $dillonkearns$elm_pages$BackendTask$Glob$match_fn($dillonkearns$elm_pages$BackendTask$Glob$literal("content/tech-blog/"), $dillonkearns$elm_pages$BackendTask$Glob$capture_fn($dillonkearns$elm_pages$BackendTask$Glob$captureFilePath_a0, $dillonkearns$elm_pages$BackendTask$Glob$succeed(F3(function (filePath, path, fileName) {
         return { h5: filePath, kC: path, fv: fileName };
-    }))))))))));
+    })))))))));
     var $author$project$Content$TechBlogpost$allBlogposts = function () {
         var updateReadingTime = function (blogposts) {
             var updatedMetadata = F2(function (blogpost, metadata) {
