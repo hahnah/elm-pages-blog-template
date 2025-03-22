@@ -13329,7 +13329,7 @@
                 $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "flex sm:space-x-2 md:space-x-12")
             ]), _List_fromArray([
                 $elm$html$Html$div_fn(_List_fromArray([
-                    $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "hidden max-h-screen h-full sm:flex flex-wrap bg-gray-50 dark:bg-gray-900/70 shadow-md pt-5 dark:shadow-gray-800/40 rounded min-w-[280px] max-w-[280px] overflow-auto")
+                    $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "hidden max-h-screen h-full sm:flex flex-wrap bg-gray-50 dark:bg-gray-900/70 shadow-md pt-5 dark:shadow-gray-800/40 rounded-sm min-w-[280px] max-w-[280px] overflow-auto")
                 ]), _List_fromArray([
                     $elm$html$Html$div_fn(_List_fromArray([
                         $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "py-4 px-6")
@@ -18011,7 +18011,7 @@
                         $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "relative mt-6 -mx-6 md:-mx-8 2xl:-mx-24")
                     ]), _List_fromArray([
                         $elm$html$Html$div_fn(_List_fromArray([
-                            $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "aspect-[2/1] w-full relative")
+                            $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "aspect-2/1 w-full relative")
                         ]), _List_fromArray([
                             $elm$html$Html$img_fn(_List_fromArray([
                                 $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$alt_a0, metadata.lc),
@@ -18494,7 +18494,7 @@
                 $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "flex sm:space-x-2 md:space-x-12")
             ]), _List_fromArray([
                 $elm$html$Html$div_fn(_List_fromArray([
-                    $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "hidden max-h-screen h-full sm:flex flex-wrap bg-gray-50 dark:bg-gray-900/70 shadow-md pt-5 dark:shadow-gray-800/40 rounded min-w-[280px] max-w-[280px] overflow-auto")
+                    $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "hidden max-h-screen h-full sm:flex flex-wrap bg-gray-50 dark:bg-gray-900/70 shadow-md pt-5 dark:shadow-gray-800/40 rounded-sm min-w-[280px] max-w-[280px] overflow-auto")
                 ]), _List_fromArray([
                     $elm$html$Html$div_fn(_List_fromArray([
                         $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "py-4 px-6")
@@ -18624,7 +18624,7 @@
                 $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "flex sm:space-x-2 md:space-x-12")
             ]), _List_fromArray([
                 $elm$html$Html$div_fn(_List_fromArray([
-                    $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "hidden max-h-screen h-full sm:flex flex-wrap bg-gray-50 dark:bg-gray-900/70 shadow-md pt-5 dark:shadow-gray-800/40 rounded min-w-[280px] max-w-[280px] overflow-auto")
+                    $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "hidden max-h-screen h-full sm:flex flex-wrap bg-gray-50 dark:bg-gray-900/70 shadow-md pt-5 dark:shadow-gray-800/40 rounded-sm min-w-[280px] max-w-[280px] overflow-auto")
                 ]), _List_fromArray([
                     $elm$html$Html$div_fn(_List_fromArray([
                         $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "py-4 px-6")
@@ -18918,7 +18918,7 @@
                         $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "relative mt-6 -mx-6 md:-mx-8 2xl:-mx-24")
                     ]), _List_fromArray([
                         $elm$html$Html$div_fn(_List_fromArray([
-                            $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "aspect-[2/1] w-full relative")
+                            $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$class_a0, "aspect-2/1 w-full relative")
                         ]), _List_fromArray([
                             $elm$html$Html$img_fn(_List_fromArray([
                                 $elm$html$Html$Attributes$stringProperty_fn($elm$html$Html$Attributes$alt_a0, metadata.lc),
